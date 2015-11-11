@@ -11,8 +11,12 @@ monBateau.size = 5
 monAutreBateau = flotte.Bateau()
 monAutreBateau.configure("porte-avion")
 
+
 encoreUnBateau = flotte.Bateau()
-encoreUnBateau.configure("radeau")
+encoreUnBateau.configure("sous-marin")
+# Idée de test
+#encoreUnBateau.configure("radeau")
+
 
 print(monBateau)
 print(monAutreBateau)
