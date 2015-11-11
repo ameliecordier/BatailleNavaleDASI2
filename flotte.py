@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+
+class Bateau:
+    name = ""
+    size = 0
+
+    def __str__(self):
+        return "Je m'appelle " + self.name + " et je mesure " + str(self.size) + " unités !"
