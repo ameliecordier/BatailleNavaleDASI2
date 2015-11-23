@@ -38,3 +38,15 @@ Détails de ce qui se passe dans utils/flotte.py (rappel : c'est un module).
 
 - La méthode __str__ est en fait une surcharge de la méthode "par défaut" pour l'affichage d'un objet instance de classe. Vous pouvez voir son effet en voyant comment les bateaux s'affichent à l'exécution du programme principal.
 
+
+Détails de ce qui se passe dans tests/test_BatailleNavale.py
+
+(note : pour lancer les tests, depuis la racine, python -m unittest discover tests. Si vous utiliser Python Idle, c'est un peu plus tricky de lancer les tests depuis l'interpréteur : unittest.main(None, argv=['', 'discover', 'tests']))
+
+- On importe le module unittest, mais aussi notre flotte (puisque c'est elle que l'on veut tester).
+
+- On crée une classe de test qui hérite de unittest.TestCase (c'est obligatoire avec unittest).
+
+- On définit 3 tests. Le premier est supposé réussir, le second échouer et le troisième lever une erreur. 
+
+
