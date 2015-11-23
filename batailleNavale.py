@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import flotte
+import utils.flotte as flotte
 
 print("Bienvenue dans ce jeu de bataille navale")
 

@@ -1,0 +1,40 @@
+Python considère que la "racine" de son espace de travail est le dossier depuis lequel vous exécutez votre code.
+
+Le commentaire en haut des fichiers définit l'encodage du fichier. C'est pratique pour avoir de jolis accents non seulement dans les commentaires, mais aussi sur la sortie standard.
+
+Python utilise les notions de modules et de packages. Pour faire un très très très gros raccourci, on peut dire qu'un module est un fichier et un package est un dossier dans lequel il y a un fichier "spécial" qui s'appelle __init__.py.
+
+Ici, on a un package (utils), par contre, tests est juste un répertoire. Ce n'est pas un package car il n'a pas vocation à être "utilisé" pour autre chose que pour contenir nos tests.
+
+
+Détails de ce qui se passe dans batailleNavale.py :
+- import utils.flotte as flotte : importe le module "flotte" du package "utils" et lui donne un petit alias (flotte).
+L'alias permet de raccourcir les notations... si on ne l'avait pas, on serait oblité d'écire "utils.flotte.Bateau()" pour créer un bateau par exemple, alors que grâce à l'alias, on peut juste écrire "flotte.Bateau()".
+
+- monBateau = flotte.Bateau() => crée une instance de Bateau.
+
+- monBateau.name => affecte un nom à l'instance créée. Observez comme il est possibles d'accéder aux attributs d'un objet via une simple notation pointée.
+
+- monBateau.size : idem
+
+- monAutreBateau : on crée une deuxième instance de Bateau...
+
+- monAutreBateau.configure("porte-avion") : voyez comme il est possible d'appeler une méthode de la classe Bateau sur une instance de cette classe.  
+
+- Le commentaire : c'est pour vous donner des idées de ce que vous pourrez faire plus tard dans les tests.
+
+
+Détails de ce qui se passe dans utils/flotte.py (rappel : c'est un module).
+
+- Dans le module, on définit un dictionnaire (typesBateaux) qui sera accessible et partagé par tous les éléments du module.
+
+- On crée une classe Bateau. Un bateau a deux attributs : un nom et une taille.
+
+- La méthode __init__ permet d'initialiser un bateau avec un nom vide et une taille égale à 0. On aurait aussi pu écrire la méthode ci-dessous par exemple, et dans ce cas, on aurait construit nos bateaux en faisant "bato = flotte.Bateau("torpilleur")"
+
+  def __init__(sefl, name):
+      self.name = name
+      self.size = typeBateaux[name]
+
+- La méthode __str__ est en fait une surcharge de la méthode "par défaut" pour l'affichage d'un objet instance de classe. Vous pouvez voir son effet en voyant comment les bateaux s'affichent à l'exécution du programme principal.
+
