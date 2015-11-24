@@ -29,6 +29,7 @@ if jouer == "O":
     monocean = ocean()
     tailleX, tailleY = demanderTailleOcean()  
     monocean.construireOcean(tailleX, tailleY)
+    
     monocean.afficherOcean()
 
     
