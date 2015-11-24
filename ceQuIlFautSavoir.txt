@@ -41,7 +41,7 @@ Détails de ce qui se passe dans utils/flotte.py (rappel : c'est un module).
 
 Détails de ce qui se passe dans tests/test_BatailleNavale.py
 
-(note : pour lancer les tests, depuis la racine, python -m unittest discover tests. Si vous utiliser Python Idle, c'est un peu plus tricky de lancer les tests depuis l'interpréteur : unittest.main(None, argv=['', 'discover', 'tests']))
+(note : pour lancer les tests, depuis la racine, python -m unittest discover tests. Si vous utilisez Python Idle, c'est un peu plus tricky de lancer les tests depuis l'interpréteur : unittest.main(None, argv=['', 'discover', 'tests']) et ajoutez l'option exit=False si vous ne voulez pas que l'interpréteur se ferme après exécution des tests.)
 
 - On importe le module unittest, mais aussi notre flotte (puisque c'est elle que l'on veut tester).
 

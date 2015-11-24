@@ -17,7 +17,7 @@ class Bateau:
 
     def __init__(self):
         self.name = ""
-        size = 0
+        self.size = 0
 
     def configure(self, name):
         self.name = name
