@@ -48,6 +48,16 @@ def initialisationY():
 
     return y
 
+
+def afficherPlateau(oceanJ1, oceanJ2, largeur):
+    print("PLATEAU DE JEU :")
+    ocean.afficherOcean(oceanJ1)
+    separation = ""
+    for i in range(0, largeur*2-1):
+        separation += "-"
+    print(separation)
+    ocean.afficherOcean(oceanJ2)
+
 #Programme principal
 jouer = deciderDeJouer()
 
@@ -61,7 +71,7 @@ if jouer == "O":
     monoceanJ1bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2tirs.construireOcean(tailleX, tailleY)
-    monoceanJ1bateaux.afficherOcean()
+    monoceanJ1bateaux.afficherPlateau(monoceanJ1bateaux,monoceanJ2bateaux,tailleX)
 
 
 #TEST PAILLARES ^^
