@@ -3,12 +3,9 @@ class ocean:
     def __init__(self):
         self.ocean = []
     
-    def construireOcean(self, x, y):
-        ligne = []
-        for i in range(0, x):
-            ligne.append("o")
-        for i in range(0, y):        
-            self.ocean.append(ligne)
+    def construireOcean(self, x,y):
+        self.ocean = [["o" for i in range(x)] for i in range(y)]
+
 
     def afficherOcean(self):
         for i in range(0,len(self.ocean)):

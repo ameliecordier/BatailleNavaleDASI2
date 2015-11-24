@@ -11,6 +11,7 @@ class TestBateau(unittest.TestCase):
         arsenal = Arsenal.Arsenal()
         bateau = Bateau.Bateau(arsenal, "Radeau")
         self.assertEqual(bateau, arsenal.bateaux[0])
+
     
 
 
