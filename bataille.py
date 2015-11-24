@@ -31,6 +31,8 @@ if jouer == "O":
     monocean.construireOcean(tailleX, tailleY)
     monocean.afficherOcean()
 
+
+#TEST PAILLARES ^^
     
 
 
