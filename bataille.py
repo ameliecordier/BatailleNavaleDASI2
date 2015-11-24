@@ -26,10 +26,16 @@ def demanderTailleOcean():
 jouer = deciderDeJouer()
 
 if jouer == "O":
-    monocean = ocean()
+    monoceanJ1bateaux = ocean()
+    monoceanJ1tirs = ocean()
+    monoceanJ2bateaux = ocean()
+    monoceanJ2tirs = ocean()
     tailleX, tailleY = demanderTailleOcean()  
-    monocean.construireOcean(tailleX, tailleY)
-    monocean.afficherOcean()
+    monoceanJ1bateaux.construireOcean(tailleX, tailleY)
+    monoceanJ1bateaux.construireOcean(tailleX, tailleY)
+    monoceanJ2bateaux.construireOcean(tailleX, tailleY)
+    monoceanJ2tirs.construireOcean(tailleX, tailleY)
+    monoceanJ1bateaux.afficherOcean()
 
     
 
