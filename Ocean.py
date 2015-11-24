@@ -1,34 +1,27 @@
-import Main
+class ocean:
 
-class Ocean():
+    def __init__(self):
+        self.ocean = []
     
-    def afficherOcean(ocean,self):
-        for i in range (0,len(ocean)):
-             print(" ".join(ocean[i]))
+    def construireOcean(self, x, y):
+        ligne = []
+        for i in range(0, x):
+            ligne.append("o")
+        for i in range(0, y):        
+            self.ocean.append(ligne)
 
-    def demanderTailleOcean(self):
-        x = input("Quelle est la valeur de X ? ")
-        y = input("Quelle est la valeur de Y ? ")
-        print("Valeur de x : " + x + "\nValeur de y : " + y)
-        return int(x), int(y)
+    def afficherOcean(self):
+        for i in range(0,len(self.ocean)):
+           print(" ".join(self.ocean[i]))
 
-    def creerOcean(self,x,y):
-        i=0
-        for i in range (0,int(x)):
-            ligne.append("O")
+    def largeurOcean(self):
+        return len(self.ocean)
+
+    def hauteurOcean(self):
+        return len(self.ocean[0])        
         
-        for i in range (0,int(y)):
-            ocean.append(ligne)
-        
-    def introJeu(self):
-        print("Bienvenue dans ce jeu de Bataille Navale !")
-        reponse = input("Voulez-vous jouer avec moi ? (O/N) ")    
-        if reponse == "O":
-            print("Let's go !")
-        elif reponse == "N":
-            print("Oh noooooon..")
-        else:
-            print("Je n'ai pas compris votre choix !")
-            reponse = introJeu()
-        return reponse
-
+monocean = ocean()
+monocean.construireOcean(4, 3)
+monocean.afficherOcean()
+print(monocean.largeurOcean())
+print(monocean.hauteurOcean())
