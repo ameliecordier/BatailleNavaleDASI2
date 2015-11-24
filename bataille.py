@@ -71,7 +71,7 @@ if jouer == "O":
     monoceanJ1bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2tirs.construireOcean(tailleX, tailleY)
-    monoceanJ1bateaux.afficherPlateau(monoceanJ1bateaux,monoceanJ2bateaux,tailleX)
+    monoceanJ1bateaux.afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX)
 
 
 #TEST PAILLARES ^^
