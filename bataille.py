@@ -16,11 +16,37 @@ def deciderDeJouer():
 
 #A déplacer plus tard... ? 
 def demanderTailleOcean():
-    X = input("Quel est la taille de X ? ")
-    Y = input("Quel est la taille de Y ? ")
+    X = initialisationX()
+    Y = initialisationY()
     print("Pour info, vous avez demandé un océan de " + X + "x" + Y)
-    return int(X), int(Y)
+    return X, Y
 
+def initialisationX():
+    while True:
+        try:
+            x = int(input("La largeur sera de ? (2 a 50)"))
+            if 2<=x<=50:
+                break
+            else:
+                print("Cet entier n'est pas compris entre 2 et 50")
+        except ValueError:
+              print("Ce n'est pas un entier!")
+
+    return x
+
+
+def initialisationY():
+    while True:
+        try:
+            y = int(input("La hauteur sera de ? (2 a 50)"))
+            if 2<=y<=50:
+                break
+            else:
+                print("Cet entier n'est pas compris entre 2 et 50")
+        except ValueError:
+              print("Ce n'est pas un entier!")
+
+    return y
 
 #Programme principal
 jouer = deciderDeJouer()
