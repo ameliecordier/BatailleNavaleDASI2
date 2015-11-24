@@ -2,8 +2,6 @@ import unittest
 import Bateau
 import Arsenal
 
-
-
 class TestBateau(unittest.TestCase):
     def test_constructionBateau(self):
         arsenal = Arsenal.Arsenal()
