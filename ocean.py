@@ -17,8 +17,5 @@ class ocean:
     def hauteurOcean(self):
         return len(self.ocean[0])        
         
-monocean = ocean()
-monocean.construireOcean(4, 3)
-monocean.afficherOcean()
-print(monocean.largeurOcean())
-print(monocean.hauteurOcean())
+
+
