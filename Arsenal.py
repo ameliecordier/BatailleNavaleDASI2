@@ -13,6 +13,7 @@ class Arsenal():
         self.dict["Torpilleur"] = 3
         self.dict["SuperTorpilleur"] = 4
         self.dict["SousMarin"] = 6
+        self.dict["Croisseur"] = 2
 
     def ajouterBateau(self,bateau):
         self.bateaux.append(bateau)
