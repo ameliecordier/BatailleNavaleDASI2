@@ -8,8 +8,8 @@ class ocean:
 
 
     def afficherOcean(self):
-        for i in range(0,len(self.ocean)):
-           print(" ".join(self.ocean[i]))
+        for i in range(1,len(self.ocean)+1):
+           print(str(i)+" "+" ".join(self.ocean[i-1]))
 
     def largeurOcean(self):
         return len(self.ocean)
