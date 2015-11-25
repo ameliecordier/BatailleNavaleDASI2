@@ -4,9 +4,9 @@ def deciderDeJouer():
     print("Bienvenue dans ce jeu de Bataille Navale d'enfer !")
     reponse = input("Voulez-vous jouer avec moi ? (O / N) ")
     
-    if reponse == "O":
+    if reponse.lowercase == "o":
         print("Youpi")
-    elif reponse == "N":
+    elif reponse.lowercase == "n":
         print("Tant pis")
     else:
         print("Je vous repose la question ?")
