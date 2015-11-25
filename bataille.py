@@ -81,6 +81,7 @@ if jouer == "O":
 
 #TEST SEVERAC !
     
+#ZBLA
 
 
 
