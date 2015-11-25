@@ -1,5 +1,10 @@
 import ocean
+<<<<<<< HEAD
 import string
+=======
+import utils.jouer as jouer
+
+>>>>>>> 173f226c99c1e1cd23f53a97526ecb7af6a139bf
 #A déplacer plus tard dans une classe logique de jeu
 def deciderDeJouer():
     print("Bienvenue dans ce jeu de Bataille Navale d'enfer !")
@@ -68,8 +73,7 @@ def afficherPlateau(oceanTirs, oceanBateaux, largeur, joueur):
 
 #Programme principal
 jouer = deciderDeJouer()
-
-if jouer == "O":
+if reponse == "O":
     monoceanJ1bateaux = ocean.ocean()
     monoceanJ1tirs = ocean.ocean()
     monoceanJ2bateaux = ocean.ocean()
@@ -81,6 +85,7 @@ if jouer == "O":
     monoceanJ2bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2tirs.construireOcean(tailleX, tailleY)
 
+<<<<<<< HEAD
     afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
 
 
@@ -93,3 +98,6 @@ if jouer == "O":
 
 
 
+=======
+    afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX)
+>>>>>>> 173f226c99c1e1cd23f53a97526ecb7af6a139bf

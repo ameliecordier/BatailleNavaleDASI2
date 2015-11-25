@@ -47,6 +47,4 @@ Détails de ce qui se passe dans tests/test_BatailleNavale.py
 
 - On crée une classe de test qui hérite de unittest.TestCase (c'est obligatoire avec unittest).
 
-- On définit 3 tests. Le premier est supposé réussir, le second échouer et le troisième lever une erreur. 
-
-- Test push.
+- On définit 3 tests. Le premier est supposé réussir, le second échouer et le troisième lever une erreur.
