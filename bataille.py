@@ -74,14 +74,3 @@ if jouer == "O":
     monoceanJ2tirs.construireOcean(tailleX, tailleY)
 
     afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX)
-
-
-
-#TEST PAILLARES ^^
-
-#TEST SEVERAC !
-    
-#ZBLA
-
-
-
