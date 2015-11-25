@@ -1,4 +1,5 @@
 import ocean
+import utils.jouer as jouer
 
 #A déplacer plus tard dans une classe logique de jeu
 def deciderDeJouer():
@@ -60,8 +61,7 @@ def afficherPlateau(oceanJ1, oceanJ2, largeur):
 
 #Programme principal
 jouer = deciderDeJouer()
-
-if jouer == "O":
+if reponse == "O":
     monoceanJ1bateaux = ocean.ocean()
     monoceanJ1tirs = ocean.ocean()
     monoceanJ2bateaux = ocean.ocean()
