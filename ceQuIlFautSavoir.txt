@@ -1,4 +1,4 @@
-Python considère que la "racine" de son espace de travail est le dossier depuis lequel vous exécutez votre code.
+﻿Python considère que la "racine" de son espace de travail est le dossier depuis lequel vous exécutez votre code.
 
 Le commentaire en haut des fichiers définit l'encodage du fichier. C'est pratique pour avoir de jolis accents non seulement dans les commentaires, mais aussi sur la sortie standard.
 
@@ -47,6 +47,4 @@ Détails de ce qui se passe dans tests/test_BatailleNavale.py
 
 - On crée une classe de test qui hérite de unittest.TestCase (c'est obligatoire avec unittest).
 
-- On définit 3 tests. Le premier est supposé réussir, le second échouer et le troisième lever une erreur. 
-
-
+- On définit 3 tests. Le premier est supposé réussir, le second échouer et le troisième lever une erreur.

@@ -10,11 +10,7 @@ class TestBateau(unittest.TestCase):
     def test_ajoutBateau(self):
         arsenal = Arsenal.Arsenal()
         bateau = Bateau.Bateau(arsenal, "Torpilleur")
-        self.assertEqual(bateau, arsenal.bateaux[0])
-
-    
-
-
+        self.assertEqual(bateau, arsenal.bateaux[0]) 
 unittest.main()
 
 
