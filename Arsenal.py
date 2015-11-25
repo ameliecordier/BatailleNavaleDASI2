@@ -8,6 +8,7 @@ class Arsenal():
 
     def creerDictionnaire(self):
         self.dict = dict()
+        self.dict["Radeau"] = 1
         self.dict["Torpilleur"] = 2
         self.dict["Sous-marin"] = 3
         self.dict["Contre-torpilleur"] = 3
