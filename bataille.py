@@ -18,7 +18,7 @@ def deciderDeJouer():
 def demanderTailleOcean():
     X = initialisationX()
     Y = initialisationY()
-    print("Pour info, vous avez demandé un océan de " + X + "x" + Y)
+    print("Pour info, vous avez demandé un océan de " + str(X) + "x" + str(Y))
     return X, Y
 
 def initialisationX():
@@ -51,27 +51,30 @@ def initialisationY():
 
 def afficherPlateau(oceanJ1, oceanJ2, largeur):
     print("PLATEAU DE JEU :")
-    ocean.afficherOcean(oceanJ1)
+    oceanJ1.afficherOcean()
     separation = ""
     for i in range(0, largeur*2-1):
         separation += "-"
     print(separation)
-    ocean.afficherOcean(oceanJ2)
+    oceanJ2.afficherOcean()
 
 #Programme principal
 jouer = deciderDeJouer()
 
 if jouer == "O":
-    monoceanJ1bateaux = ocean()
-    monoceanJ1tirs = ocean()
-    monoceanJ2bateaux = ocean()
-    monoceanJ2tirs = ocean()
+    monoceanJ1bateaux = ocean.ocean()
+    monoceanJ1tirs = ocean.ocean()
+    monoceanJ2bateaux = ocean.ocean()
+    monoceanJ2tirs = ocean.ocean()
     tailleX, tailleY = demanderTailleOcean()  
+
     monoceanJ1bateaux.construireOcean(tailleX, tailleY)
-    monoceanJ1bateaux.construireOcean(tailleX, tailleY)
+    monoceanJ1tirs.construireOcean(tailleX, tailleY)
     monoceanJ2bateaux.construireOcean(tailleX, tailleY)
     monoceanJ2tirs.construireOcean(tailleX, tailleY)
-    monoceanJ1bateaux.afficherPlateau(monoceanJ1bateaux,monoceanJ2bateaux,tailleX)
+
+    afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX)
+
 
 
 #TEST PAILLARES ^^
