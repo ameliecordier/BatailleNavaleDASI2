@@ -78,7 +78,10 @@ if jouer == "O":
 
 
 #TEST PAILLARES ^^
+
+#TEST SEVERAC !
     
+#ZBLA
 
 
 
