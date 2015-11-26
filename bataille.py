@@ -15,6 +15,7 @@ def deciderDeJouer():
         print("Je vous repose la question ?")
         deciderDeJouer()
 
+
 #A déplacer plus tard... ? 
 def demanderTailleOcean():
     X = initialisationX()
@@ -82,6 +83,7 @@ monoceanJ2bateaux.construireOcean(tailleX, tailleY)
 monoceanJ2tirs.construireOcean(tailleX, tailleY)
 
 afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
+
 alphabet="abcdefghijklmnopqrstuvwxyz"
 tirX = input("Saisissez la coordonnée X de votre tir (exemple : B): ")
 tirX = tirX.lower()
@@ -97,4 +99,5 @@ tirY = int(input("Saisissez la coordonnée Y de votre tir (exemple : 15): "))
 while tirY > 26 or tirY < 0:
     print("Erreur : veuillez saisir une valeur de 0 à 26")
     tirY = int(input("Saisissez la coordonnée Y de votre tir (exemple : 15): "))
+
 
