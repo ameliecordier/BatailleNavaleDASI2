@@ -4,14 +4,14 @@ def deciderDeJouer():
     print("Bienvenue dans ce jeu de Bataille Navale d'enfer !")
     reponse = input("Voulez-vous jouer avec moi ? (O / N) ")
     
-    if reponse.lowercase == "o":
+    if reponse == "O":
         print("Youpi")
-    elif reponse.lowercase == "n":
+    elif reponse == "N":
         print("Tant pis")
     else:
         print("Je vous repose la question ?")
-        reponse = deciderDeJouer()
-    return reponse
+        deciderDeJouer()
+
 
 #A déplacer plus tard... ? 
 def demanderTailleOcean():
@@ -66,21 +66,17 @@ def afficherPlateau(oceanTirs, oceanBateaux, largeur, joueur):
     print(separation)
 
 #Programme principal
-jouer = deciderDeJouer()
-
-if jouer == "O":
-    monoceanJ1bateaux = ocean.ocean()
-    monoceanJ1tirs = ocean.ocean()
-    monoceanJ2bateaux = ocean.ocean()
-    monoceanJ2tirs = ocean.ocean()
-    tailleX, tailleY = demanderTailleOcean()  
-
-    monoceanJ1bateaux.construireOcean(tailleX, tailleY)
-    monoceanJ1tirs.construireOcean(tailleX, tailleY)
-    monoceanJ2bateaux.construireOcean(tailleX, tailleY)
-    monoceanJ2tirs.construireOcean(tailleX, tailleY)
-
-    afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
+deciderDeJouer()
+monoceanJ1bateaux = ocean.ocean()
+monoceanJ1tirs = ocean.ocean()
+monoceanJ2bateaux = ocean.ocean()
+monoceanJ2tirs = ocean.ocean()
+tailleX, tailleY = demanderTailleOcean()
+monoceanJ1bateaux.construireOcean(tailleX, tailleY)
+monoceanJ1tirs.construireOcean(tailleX, tailleY)
+monoceanJ2bateaux.construireOcean(tailleX, tailleY)
+monoceanJ2tirs.construireOcean(tailleX, tailleY)
+afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
 
 
 
