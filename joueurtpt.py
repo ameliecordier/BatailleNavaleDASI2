@@ -17,5 +17,5 @@ class Joueur:
         tire(J1)
         if (J2.isAlive):
             tire(J2)
-    #Appel fonction win
+    #Appel fonction msgVictoire
         
