@@ -68,7 +68,7 @@ def afficherPlateau(oceanTirs, oceanBateaux, largeur, joueur):
 #Programme principal
 jouer = deciderDeJouer()
 
-if jouer == "O":
+if jouer == "o":
     monoceanJ1bateaux = ocean.ocean()
     monoceanJ1tirs = ocean.ocean()
     monoceanJ2bateaux = ocean.ocean()
