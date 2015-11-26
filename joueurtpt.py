@@ -4,12 +4,18 @@ class Joueur:
         self.nom = nom
         self.HP = HP
 
-    def tour(joueur):
-        if(joueur.hp > 0):
-            #appel fonction tir
-
+    def isAlive():
+        if(self.HP > 0):
+            return True
+        else:
+            return False
+        
+        
 #Main
 
-    while(J1.HP > 0 and J2.HP > 0):
-        joueurtpt.tour(J1)
-        joueurtpt.tour(J2)
+    while(J1.isAlive and J2.isAlive):
+        tire(J1)
+        if (J2.isAlive):
+            tire(J2)
+    #Appel fonction win
+        
