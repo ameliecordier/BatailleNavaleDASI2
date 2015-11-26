@@ -83,14 +83,3 @@ monoceanJ2bateaux.construireOcean(tailleX, tailleY)
 monoceanJ2tirs.construireOcean(tailleX, tailleY)
 
 afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
-
-
-
-#TEST PAILLARES ^^
-
-#TEST SEVERAC !
-    
-#ZBLA
-
-
-
