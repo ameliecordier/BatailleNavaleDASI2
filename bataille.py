@@ -25,11 +25,11 @@ def demanderTailleOcean():
 def initialisationX():
     while True:
         try:
-            x = int(input("La largeur sera de ? (2 a 50)"))
-            if 2<=x<=50:
+            x = int(input("La largeur sera de ? (10 à 26) : "))
+            if 10<=x<=26:
                 break
             else:
-                print("Cet entier n'est pas compris entre 2 et 50")
+                print("Cet entier n'est pas compris entre 10 et 26")
         except ValueError:
               print("Ce n'est pas un entier!")
 
@@ -39,11 +39,11 @@ def initialisationX():
 def initialisationY():
     while True:
         try:
-            y = int(input("La hauteur sera de ? (2 a 50)"))
-            if 2<=y<=50:
+            y = int(input("La hauteur sera de ? (10 à 26) : "))
+            if 10<=y<=26:
                 break
             else:
-                print("Cet entier n'est pas compris entre 2 et 50")
+                print("Cet entier n'est pas compris entre 10 et 26")
         except ValueError:
               print("Ce n'est pas un entier!")
 
