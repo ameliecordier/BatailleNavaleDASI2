@@ -1,17 +1,19 @@
 import ocean
+import sys
 #A déplacer plus tard dans une classe logique de jeu
 def deciderDeJouer():
     print("Bienvenue dans ce jeu de Bataille Navale d'enfer !")
     reponse = input("Voulez-vous jouer avec moi ? (O / N) ")
-    
-    if reponse == "O":
+    reponse = reponse.lower()
+
+    if reponse == "o":
         print("Youpi")
-    elif reponse == "N":
+    elif reponse == "n":
         print("Tant pis")
+        sys.exit(0)
     else:
         print("Je vous repose la question ?")
-        reponse = deciderDeJouer()
-    return reponse
+        deciderDeJouer()
 
 #A déplacer plus tard... ? 
 def demanderTailleOcean():
@@ -49,38 +51,37 @@ def initialisationY():
 
 
 def afficherPlateau(oceanTirs, oceanBateaux, largeur, joueur):
-    alphabet="  a b c d e f g h i j k l m n o p q r s t u v w x y z"
+    alphabet="   a b c d e f g h i j k l m n o p q r s t u v w x y z"
     print("PLATEAU DE JEU J"+joueur+":")
     print(alphabet[:largeur*2+2])
-    oceanTirs.afficherOcean()
+    oceanTirs.afficherOcean(1)
     separation = "  "
-    for i in range(0, largeur*2-1):
+    for i in range(0, largeur*2+5):
         separation += "-"
     print(separation)
-    print(alphabet[:largeur*2+2])
-    oceanBateaux.afficherOcean()
+    print(alphabet[:largeur*2+2] + "  Bateaux")
+    oceanBateaux.afficherOcean(2)
     print("")
     separation = ""
-    for i in range(0, largeur):
+    for i in range(0, largeur+2):
         separation += "/\\"
     print(separation)
 
 #Programme principal
-jouer = deciderDeJouer()
+deciderDeJouer()
+monoceanJ1bateaux = ocean.ocean()
+monoceanJ1tirs = ocean.ocean()
+monoceanJ2bateaux = ocean.ocean()
+monoceanJ2tirs = ocean.ocean()
+tailleX, tailleY = demanderTailleOcean()
+print('')
 
-if jouer == "O":
-    monoceanJ1bateaux = ocean.ocean()
-    monoceanJ1tirs = ocean.ocean()
-    monoceanJ2bateaux = ocean.ocean()
-    monoceanJ2tirs = ocean.ocean()
-    tailleX, tailleY = demanderTailleOcean()  
+monoceanJ1bateaux.construireOcean(tailleX, tailleY)
+monoceanJ1tirs.construireOcean(tailleX, tailleY)
+monoceanJ2bateaux.construireOcean(tailleX, tailleY)
+monoceanJ2tirs.construireOcean(tailleX, tailleY)
 
-    monoceanJ1bateaux.construireOcean(tailleX, tailleY)
-    monoceanJ1tirs.construireOcean(tailleX, tailleY)
-    monoceanJ2bateaux.construireOcean(tailleX, tailleY)
-    monoceanJ2tirs.construireOcean(tailleX, tailleY)
-
-    afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
+afficherPlateau(monoceanJ1tirs,monoceanJ1bateaux,tailleX, "1")
 
 
 
