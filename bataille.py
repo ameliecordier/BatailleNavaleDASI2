@@ -4,9 +4,15 @@ def deciderDeJouer():
     print("Bienvenue dans ce jeu de Bataille Navale d'enfer !")
     reponse = input("Voulez-vous jouer avec moi ? (O / N) ")
     
+<<<<<<< HEAD
     if reponse.lowercase == "o":
         print("Youpi")
     elif reponse.lowercase == "n":
+=======
+    if reponse == "o":
+        print("Youpi")
+    elif reponse == "n":
+>>>>>>> master
         print("Tant pis")
     else:
         print("Je vous repose la question ?")
@@ -68,7 +74,7 @@ def afficherPlateau(oceanTirs, oceanBateaux, largeur, joueur):
 #Programme principal
 jouer = deciderDeJouer()
 
-if jouer == "O":
+if jouer == "o":
     monoceanJ1bateaux = ocean.ocean()
     monoceanJ1tirs = ocean.ocean()
     monoceanJ2bateaux = ocean.ocean()
