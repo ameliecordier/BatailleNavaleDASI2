@@ -12,7 +12,11 @@ def deciderDeJouer():
     if reponse == "o":
         print("Youpi")
     elif reponse == "n":
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> master
+>>>>>>> origin/Groupe2
         print("Tant pis")
     else:
         print("Je vous repose la question ?")
