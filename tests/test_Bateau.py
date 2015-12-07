@@ -5,11 +5,11 @@ import Arsenal
 class TestBateau(unittest.TestCase):
     def test_constructionBateau(self):
         arsenal = Arsenal.Arsenal()
-        bateau = flotte.Bateau(arsenal, "porte-avion")
+        bateau = flotte.Bateau(Arsenal, "porte-avion")
         self.assertEqual(bateau.taille,5)
     def test_ajoutBateau(self):
         arsenal = Arsenal.Arsenal()
-        bateau = flotte.Bateau(arsenal, "torpilleur")
+        bateau = flotte.Bateau(Arsenal, "torpilleur")
         self.assertEqual(bateau, arsenal.bateaux[0])
 
 
