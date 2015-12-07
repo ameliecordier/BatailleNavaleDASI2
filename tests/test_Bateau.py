@@ -1,21 +1,16 @@
 import unittest
-import Bateau
+import utils.flotte as flotte
 import Arsenal
 
 class TestBateau(unittest.TestCase):
     def test_constructionBateau(self):
         arsenal = Arsenal.Arsenal()
-        bateau = Bateau.Bateau(arsenal, "Porte-avion")
+        bateau = flotte.Bateau.Bateau(arsenal, "porte-avion")
         self.assertEqual(bateau.taille,5)
     def test_ajoutBateau(self):
         arsenal = Arsenal.Arsenal()
-        bateau = Bateau.Bateau(arsenal, "Torpilleur")
+        bateau = flotte.Bateau.Bateau(arsenal, "torpilleur")
         self.assertEqual(bateau, arsenal.bateaux[0])
-
-    
-
-
-unittest.main()
 
 
 #TEST
