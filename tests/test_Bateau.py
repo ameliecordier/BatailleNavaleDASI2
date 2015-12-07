@@ -4,7 +4,6 @@ import Arsenal
 
 class TestBateau(unittest.TestCase):
     def test_constructionBateau(self):
-        arsenal = Arsenal.Arsenal()
         bateau = flotte.Bateau()
         bateau.configure("porte-avion")
         self.assertEqual(bateau.size,5)

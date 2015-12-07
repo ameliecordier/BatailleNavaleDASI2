@@ -8,4 +8,3 @@ class TestBatailleNavale(unittest.TestCase):
         monBeauBateau.configure("porte-avion")
         self.assertEqual(monBeauBateau.size, 5)
 
-#TEST

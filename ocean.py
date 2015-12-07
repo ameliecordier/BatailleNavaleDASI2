@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 class ocean:
 
     def __init__(self):
@@ -24,7 +27,4 @@ class ocean:
         return len(self.ocean)
 
     def hauteurOcean(self):
-        return len(self.ocean[0])        
-
-#TEST
-#ZBRA
+        return len(self.ocean[0])
