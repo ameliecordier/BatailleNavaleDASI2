@@ -3,4 +3,8 @@ python:
     - 3.5
 
 script:
+<<<<<<< HEAD
     - python -m unittest discover tests
+=======
+    - python -m unittest discover tests
+>>>>>>> origin/master
