@@ -23,8 +23,3 @@ class TestOcean(unittest.TestCase):
         for y in range(-1, 7):
             for x in range(-1, 3):
                 self.assertEqual(o.grille[x][y], "o")
-
-
-
-print("\nDébut des tests d'ocean.")
-unittest.main()
