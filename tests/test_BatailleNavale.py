@@ -8,9 +8,6 @@ class TestBateau(unittest.TestCase):
         monBeauBateau.configure("porte-avion")
         self.assertEqual(monBeauBateau.size, 5)
 
-    def test_monTest(self):
-        self.assertEqual(2+2,5)
-
 
 #unittest.main()
 
