@@ -1,5 +1,5 @@
 import unittest
-import Bateau
+import utils.flotte as Bateau
 import Arsenal
 
 class TestBateau(unittest.TestCase):
