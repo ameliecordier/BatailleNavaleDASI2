@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import ocean
 import sys
 #A déplacer plus tard dans une classe logique de jeu
