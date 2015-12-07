@@ -4,8 +4,6 @@
 
 # IntelliJ project files
 .idea/
-__pycache__/
-utils/__pycache__/
 *.iml
 out
 gen
