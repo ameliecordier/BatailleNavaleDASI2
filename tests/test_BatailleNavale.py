@@ -11,9 +11,6 @@ class TestBateau(unittest.TestCase):
     def test_monTest(self):
         self.assertEqual(2+2,5)
 
-    def test_Erreur(self):
-        print toto
-
 
 #unittest.main()
 
