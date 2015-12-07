@@ -1,7 +1,7 @@
 import unittest
 import utils.flotte as flotte
 
-class TestBateau(unittest.TestCase):
+class TestBatailleNavale(unittest.TestCase):
 
     def test_Configure(self):
         monBeauBateau = flotte.Bateau()
@@ -14,7 +14,4 @@ class TestBateau(unittest.TestCase):
     def test_Erreur(self):
         print toto
 
-
 #unittest.main()
-
-#TEST

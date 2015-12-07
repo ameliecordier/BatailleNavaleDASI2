@@ -15,7 +15,4 @@ class TestBateau(unittest.TestCase):
     
 
 
-unittest.main()
-
-
-#TEST
+#unittest.main()
